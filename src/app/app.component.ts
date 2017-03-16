@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+  codeArea:string = "";
+  submitCode = (code) => {
+    console.log("submitted code : "+code);
+  }
 }

@@ -1,3 +1,8 @@
 <h1>
   {{title}}
 </h1>
+
+<form>
+  <textarea #codearea (ngModelChange)="codeArea=codearea.value" [value]="codeArea" style="height:200px;width:200px"></textarea>
+</form>
+<button (click)="submitCode(codearea.value)">submit</button>
